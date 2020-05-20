@@ -17,19 +17,19 @@ var prezzoScontatoOver65 = prezzoTotale - scontoOver65;
 // Validazione e output
 if (!isNaN(prezzoTotale)) {
   document.getElementById('prezzo_biglietto').innerHTML = 'Il prezzo del biglietto è di ' + prezzoTotale + ' €.'
+
+  if (!isNaN(eta)) {
+    if (eta < 18) {
+      document.getElementById('prezzo_scontato').innerHTML = 'Il prezzo del biglietto scontato è ' + prezzoScontatoMinorenni + ' €.';
+    } else if (eta > 65) {
+      document.getElementById('prezzo_scontato').innerHTML = 'Il prezzo del biglietto scontato è ' + prezzoScontatoOver65 + ' €.';
+    } else {
+      document.getElementById('prezzo_scontato').innerHTML = 'Non ci sono sconti a te dedicati.';
+    }
+  } else {
+    alert("Non posso calcolare gli sconti perchè l'età che mi hai dato non è un numero valido!!")
+  }
+
 } else {
   alert('Non posso calcolare il prezzo totale perchè non mi hai dato il numero dei kilometri!!')
-}
-
-// Output prezzo scontato in base all'età
-if (!isNaN(eta)) {
-  if (eta < 18) {
-    document.getElementById('prezzo_scontato').innerHTML = 'Il prezzo del biglietto scontato è ' + prezzoScontatoMinorenni + ' €.';
-  } else if (eta > 65) {
-    document.getElementById('prezzo_scontato').innerHTML = 'Il prezzo del biglietto scontato è ' + prezzoScontatoOver65 + ' €.';
-  } else {
-    document.getElementById('prezzo_scontato').innerHTML = 'Non ci sono sconti a te dedicati.';
-  }
-} else {
-  alert("Non posso calcolare gli sconti perchè l'età che mi hai dato non è un numero valido!!")
 }
