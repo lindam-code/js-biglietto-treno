@@ -1,4 +1,4 @@
-// Chiedi all'utente quanti chilometri deve percorrere con il treno quanti anni ha per applicare sconti eventuali.
+// Chiedi all'utente quanti chilometri deve percorrere con il treno e quanti anni ha per applicare sconti eventuali.
 var km = parseInt(prompt('Scrivi in numero quanti km devi percorrere con il treno.'));
 var eta = parseInt(prompt('Scrivi quanti anni hai, in numero.'))
 

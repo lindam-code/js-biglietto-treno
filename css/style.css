@@ -28,4 +28,14 @@ p {
   font-size: 25px;
   font-weight: bold;
 }
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: red;
+  margin: 50px 0;
+}
 /* Fine regole di stile */
