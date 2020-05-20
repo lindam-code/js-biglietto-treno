@@ -31,7 +31,6 @@ if (!isNaN(prezzoTotale)) {
   } else {
     alert("Non posso calcolare gli sconti perchè l'età che mi hai dato non è un numero valido!!")
   }
-
 } else {
   alert('Non posso calcolare il prezzo totale perchè non mi hai dato il numero dei kilometri!!')
 }

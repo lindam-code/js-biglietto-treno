@@ -13,7 +13,7 @@
   background-image: radial-gradient(#fb0101, #870011);
 }
 main {
-  width: 50%;
+  width: 70%;
   margin: auto;
   background-color: #fff;
   text-align: center;
@@ -37,5 +37,16 @@ a {
   padding: 5px 10px;
   background-color: red;
   margin: 50px 0;
+}
+.sconti {
+  list-style-type: none;
+}
+.sconti li {
+  display: inline-block;
+  border: 2px solid red;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+
 }
 /* Fine regole di stile */
