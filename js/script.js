@@ -19,8 +19,10 @@ if (!isNaN(prezzoTotale)) {
   document.getElementById('prezzo_biglietto').innerHTML = 'Il prezzo del biglietto è di ' + prezzoTotale + ' €.'
 
   if (!isNaN(eta)) {
-    if (eta < 18) {
+    if (eta < 18 && eta > 12) {
       document.getElementById('prezzo_scontato').innerHTML = 'Il prezzo del biglietto scontato è ' + prezzoScontatoMinorenni + ' €.';
+    } else if (eta <= 12) {
+      document.getElementById('prezzo_scontato').innerHTML = 'I bambini fino a 12 anni compresi non pagano il biglietto!';
     } else if (eta > 65) {
       document.getElementById('prezzo_scontato').innerHTML = 'Il prezzo del biglietto scontato è ' + prezzoScontatoOver65 + ' €.';
     } else {
